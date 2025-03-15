@@ -1,0 +1,37 @@
+#app {
+    display: grid;
+    grid-template-columns: 25rem 1fr;
+    gap: 1.25rem;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+main, aside {
+    border-radius: .75rem;
+}
+
+main {
+    background-color: var(--shape-body);
+    padding: 5rem 8.125rem;
+}
+
+aside {
+    padding: 2rem;
+    position: relative;
+
+    & .bg {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+        background-image: url(../assets/img/Background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 0;
+        top: 0;
+        inset: 0;
+        border-radius: .75rem;
+        z-index: -1;
+    }
+}
