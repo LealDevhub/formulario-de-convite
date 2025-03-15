@@ -13,7 +13,12 @@ main, aside {
 
 main {
     background-color: var(--shape-body);
-    padding: 5rem 8.125rem;
+
+    & .main-container {
+        max-width: 35rem;
+        margin-inline: auto;
+        margin-top: 5rem;
+    }
 }
 
 aside {
@@ -28,6 +33,7 @@ aside {
         background-image: url(../assets/img/Background.png);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         left: 0;
         top: 0;
         inset: 0;
