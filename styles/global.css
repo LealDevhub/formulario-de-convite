@@ -36,20 +36,26 @@
 
     /* font-families */
     --leckerli-one: "Leckerli One", sans-serif;
-    --baloo-2: "Baloo", sans-serif;
+    --baloo-2: "Baloo 2", sans-serif;
     --open-sans: "Open Sans", sans-serif;
 
-    --logo: 400 2.5rem/auto var(--leckerli-one);
+    --logo: 400 2.5rem var(--leckerli-one);
     
-    --title-md: 700 1.75rem/auto var(--baloo-2);
-    --title-sm: 700 1.125rem/auto var(--baloo-2);
+    --title-md: 700 1.75rem var(--baloo-2);
+    --title-sm: 700 1.125rem var(--baloo-2);
 
-    --body-md: 400/700 1rem/auto var(--open-sans);
-    --body-sm: 400/700 .875rem/auto var(--open-sans);
-    --body-xs: 400/700 .75rem/auto var(--open-sans);
+    --body-md: 400 1rem var(--open-sans);
+    --body-sm: 400 .875rem var(--open-sans);
+    --body-xs: 400 .75rem var(--open-sans);
 }
 
 body {
     background-color: var(--shape-background);
     color: var(--text-body);
 }
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+

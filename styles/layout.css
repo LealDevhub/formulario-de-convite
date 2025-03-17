@@ -15,15 +15,39 @@ main {
     background-color: var(--shape-body);
 
     & .main-container {
-        max-width: 35rem;
+        max-width: 68.29%;
+        min-width: 35rem;
         margin-inline: auto;
         margin-top: 5rem;
+        padding-inline: 2rem;
+        font: var(--body-sm);
+        
+        & h1 {
+            font: var(--title-md);
+        }
+
+        & legend {
+            font: var(--title-sm);
+        }
+
+        & label {
+            font: var(--body-sm);
+        }
+
+        & input {
+            font: var(--body-md);
+        }
+
+        & h1, legend {
+            color: var(--text-heading);
+        }
     }
 }
 
 aside {
     padding: 2rem;
     position: relative;
+    overflow: auto;
 
     & .bg {
         position: absolute;
@@ -39,5 +63,21 @@ aside {
         inset: 0;
         border-radius: .75rem;
         z-index: -1;
+    }
+
+    & .aside-container {
+        & h1 {
+            font: var(--logo);
+            color: var(--pink);
+        }
+
+        & p {
+            font: var(--body-md);
+        }
+
+        & img {
+            width: 3rem;
+            height: 3rem;
+        }
     }
 }
