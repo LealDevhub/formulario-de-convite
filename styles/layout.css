@@ -15,8 +15,7 @@ main {
     background-color: var(--shape-body);
 
     & .main-container {
-        max-width: 68.29%;
-        min-width: 35rem;
+        max-width: 35rem;
         margin-inline: auto;
         margin-top: 5rem;
         padding-inline: 2rem;

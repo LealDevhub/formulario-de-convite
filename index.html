@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Convite</title>
 
+    <!-- Preconnect para fontes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- Estilos -->
     <link rel="stylesheet" href="styles/index.css">
-    <!-- link fonts -->
+    
+    <!-- Fontes Google -->
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -25,9 +28,7 @@
         <main>
             <div class="main-container">
                 <h1>Crie seu convite</h1>
-
                 <form action="">
-
                     <fieldset class="details">
                         <legend>
                             <img src="assets/icons/calendar.svg" alt="ícone de calendário">
@@ -39,31 +40,37 @@
                             <input type="text" name="titulo" id="title" placeholder="Nome do evento">
                         </div>
 
-                        <div class="flex">
+                        <div class="date-wrapper">
                             <div class="input-wrapper">
                                 <label for="start">Início</label>
                                 <input type="date" name="inicio" id="start">
-                            <div>
+                            </div>
                             <div class="input-wrapper">
                                 <label for="end">Fim</label>
                                 <input type="date" name="fim" id="end">
                             </div>
                         </div>
-                        <div class="flex">
-                            <div class="radio-wrapper flex">
-                                <div class="inner-wrapper">
-                                    <input type="radio" name="study-type" id="presential">
-                                    <label for="presential">
-                                        <img src="assets/icons/building-2.svg" alt="">
-                                        Presencial
-                                    </label>
-                                </div>
-                                <div class="inner-wrapper">
-                                    <input type="radio" name="study-type" id="online">
-                                    <label for="online">
-                                        <img src="assets/icons/video.svg" alt="">
-                                        Online
-                                    </label>
+
+                        <div class="type-wrapper">
+                            <div class="radio-wrapper">
+                                <label>Tipo</label>
+
+                                <div class="types">
+                                    <div class="inner-wrapper">
+                                        <input type="radio" name="study-type" id="presential">
+                                        <label for="presential">
+                                            <img src="assets/icons/building-2.svg" alt="">
+                                            Presencial
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="inner-wrapper">
+                                        <input type="radio" name="study-type" id="online">
+                                        <label for="online">
+                                            <img src="assets/icons/video.svg" alt="">
+                                            Online
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="input-wrapper">
@@ -71,13 +78,14 @@
                                 <input type="text" name="local" id="local" placeholder="Link ou endereço">
                             </div>
                         </div>
+                        
                         <div class="textarea-wrapper">
                             <label for="description">Descrição</label>
                             <textarea name="description" id="description" cols="60" rows="10" placeholder="Escreva sobre os detalhes do evento"></textarea>
                         </div>
-                    </fieldset>
-                </div>
+                    </fieldset>              
                 </form>
+            </div>
         </main>
     </div>
 </body>

@@ -1,0 +1,67 @@
+.date-wrapper, .type-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+}
+
+.types {
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+        background-color: var(--input-base);
+        border: 1px solid var(--input-stroke);
+        border-radius: .5rem;
+        padding: .25rem;
+        position: relative;
+        
+        .inner-wrapper {
+            padding: .25rem 1.125rem;
+            border-radius: .25rem;
+            font: var(--body-sm);
+            font-weight: 700;
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: relative;
+            
+
+            & label {
+                margin: 0;
+                gap: .5rem;
+            }
+
+            & input {
+                all: unset;
+                position: absolute;
+                inset: 0;
+            }
+
+            &:hover {
+                background-color: var(--shape-hover);
+            }
+
+            &:has(:checked) {
+                & label {
+                    font-weight: 700;
+                }
+                background-color: var(--shape-hover);
+            }
+        }
+
+        
+
+        
+        
+
+}
+
+.inner-wrapper > label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: none;
+}
