@@ -22,23 +22,11 @@ input,textarea, select {
     border-color: var(--input-stroke);
     border-style: solid;
     outline: none;
+    resize: none;
 }
 
 input::placeholder, textarea::placeholder {
     color: var(--input-placeholder);
-}
-
-.radio-wrapper {
-    .flex{
-        border: 1px solid var(--input-stroke);
-        background-color: var(--input-base);
-        padding: .25rem;
-        border-radius: .5rem;
-
-        & .inner-wrapper {
-            border: 1px solid white;
-        }
-    }
 }
 
 label {
